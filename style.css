@@ -302,8 +302,8 @@ a {
 
 .project-card{
     width: 90%;
-    height: 550px;
-    background-image: url(./Images/projects/Project2.png);
+    height: 500px;
+    background-image: url(./Images/projects/Project1.png);
     background-size: cover;
     /* background-repeat: no-repeat; */
 
@@ -319,7 +319,7 @@ a {
     right: 0;
     bottom: 0;
     background-color: #1f1f1f9a;
-    transform: scaleX(1);
+    /* transform: scaleX(1); */
     z-index: 0;
 }
 
@@ -346,9 +346,106 @@ a {
     font-size: 200px;
     font-weight: 600;
     color: white;
-    z-index: 1;
+    z-index: 10;
+    display: none;
+}
+
+.project-card:hover .project-number{
+    display: block;
+    
 }
 
 .project-number-right{
+    right: -40px;
+    top: -45px;
     
 }
+.project-number-left{
+    left: -40px;
+    top: -45px;
+
+}
+
+.project-content{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 2em;
+    bottom: 20%;
+    z-index: 5;
+    gap: 1em;
+    transition: all 0.4s;
+}
+
+.project-content-left{
+    left: 10%;
+}
+
+.project-content-right{
+    right: 10%;
+}
+
+.project-skills-container{
+    width: 60%;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.project-skill{
+    width: 40px;
+}
+
+.project-heading{
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 3rem;
+}
+
+.project-subHeading{
+    width: 70%;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.btn-grp{
+    display: flex;
+    gap: 0.9rem;
+    align-items: center;
+}
+
+.btn-project:hover{
+    border: none;
+}
+
+.icon{
+    cursor: pointer;
+    color: white;
+    font-size: 35px;
+    transition: all 0.4s;
+}
+
+.icon:hover{
+    color: var(--bgOrange);
+}
+
+.project-card:hover .project-content{
+    transform: scale(1.1);
+}
+
+#project1{
+    background-image: url(./Images//projects/Project1.png);
+}
+#project2{
+    margin-left: 100px;
+    background-image: url(./Images//projects/Project2.png);
+}
+#project3{
+    background-image: url(./Images//projects/Project3.png);
+}
+#project4{
+    margin-left: 100px;
+    background-image: url(./Images//projects/Project4.png);
+}
+
